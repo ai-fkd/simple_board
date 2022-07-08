@@ -1,4 +1,7 @@
 <h1>Posts</h1>
 
 <%= render @posts %>
+<%# ↑↑postsディレクトリの中の、_がついているものがrenderファイルという意味あいになる、ファイル名は「post」であるところまで決まっている  %>
+
 <%= link_to 'New Post', new_post_path %>
+<%# link_to はHTMLのaタグ、第一引数が表示テキスト、new_post_pathはURL「/post/new」を意味、prefixを使うときは_pathを最後につけないといけない%>
